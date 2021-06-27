@@ -15,6 +15,11 @@ const questions = [
         message: 'Briefly describe your project.',
         name: 'description',
     },
+    {
+        type: 'input',
+        message: 'Which command should be run to install dependencies?',
+        name: 'installation',
+    },
 ];
 
 // Function to write README file
