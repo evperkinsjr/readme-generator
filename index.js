@@ -16,7 +16,9 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // Function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((response) => console.log(response.title));
+}
 
 // Function call to initialize app
 init();
