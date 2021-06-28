@@ -18,26 +18,33 @@ function renderLicenseBadge(license) {
 
 // Function that returns the license link
 // If there is no license, returns an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  return (license === 'None') ? '' : `\n* [License](#license)\n`;
+}
 
 // Function that returns the license section of README
 // If there is no license, returns an empty string
 function renderLicenseSection(license) {
-  (license === 'None') ? '' : `## License
-  This project is licensed under the terms of the ${data.license} license.`;
+  return (license === 'None') ? '' : `\n## License
+  This project is licensed under the terms of the ${data.license} license.\n<p>&nbsp</p>`;
 }
 
 // Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
 
   ## Description
   ${data.description}
   <p>&nbsp</p>
 
   ## Table of Contents
-
-
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  ${renderLicenseLink(data.license)}
+  * [Tests](#tests)
+  * [Questions](#questions)
   <p>&nbsp</p>
 
   ## Installation
@@ -52,7 +59,7 @@ function generateMarkdown(data) {
   ## Contributing
   ${data.contributing}
   <p>&nbsp</p>
-
+  ${renderLicenseSection(data.license)}
   ## Tests
   To run tests, use the following command:
   ${data.tests}
@@ -60,9 +67,7 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any questions, contact me at ${data.email}.
-  You can see more of my work at [${data.github}](https://github.com/${data.github}/).
-
-`;
+  You can see more of my work at [${data.github}](https://github.com/${data.github}/).`;
 }
 
 module.exports = generateMarkdown;
