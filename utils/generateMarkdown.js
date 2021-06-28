@@ -7,7 +7,9 @@ function renderLicenseBadge(license) {
     return `![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)`;
   } else if (license === 'BSD 3-Clause') {
     return `![License](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)`;
-  }
+  } else if (license === 'GLP 3.0') {
+    return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+  } 
 }
 
 // TODO: Create a function that returns the license link
