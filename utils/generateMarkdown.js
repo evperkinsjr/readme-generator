@@ -3,6 +3,10 @@
 function renderLicenseBadge(license) {
   if (license === 'Apache 2.0') {
     return `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
+  } else if (license === 'BSD 2-Clause') {
+    return `![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)`;
+  } else if (license === 'BSD 3-Clause') {
+    return `![License](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)`;
   }
 }
 
