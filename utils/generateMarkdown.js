@@ -19,14 +19,14 @@ function renderLicenseBadge(license) {
 // Function that returns the license link
 // If there is no license, returns an empty string
 function renderLicenseLink(license) {
-  return (license === 'None') ? '' : `\n* [License](#license)\n`;
+  return (license === 'None') ? '' : `* [License](#license)`;
 }
 
 // Function that returns the license section of README
 // If there is no license, returns an empty string
 function renderLicenseSection(license) {
   return (license === 'None') ? '' : `\n## License
-  This project is licensed under the terms of the ${data.license} license.\n<p>&nbsp</p>`;
+  This project is licensed under the terms of the ${license} license.\n<p>&nbsp</p>`;
 }
 
 // Function to generate markdown for README
