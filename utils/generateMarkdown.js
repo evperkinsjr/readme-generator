@@ -49,6 +49,7 @@ function generateMarkdown(data) {
 
   ## Installation
   To install the required dependencies, run the following command:
+  
   ${data.installation}
   <p>&nbsp</p>
 
@@ -59,15 +60,19 @@ function generateMarkdown(data) {
   ## Contributing
   ${data.contributing}
   <p>&nbsp</p>
+
   ${renderLicenseSection(data.license)}
+
   ## Tests
   To run tests, use the following command:
+
   ${data.tests}
   <p>&nbsp</p>
 
   ## Questions
   If you have any questions, contact me at ${data.email}.
-  You can see more of my work at [${data.github}](https://github.com/${data.github}/).`;
+
+  See more of my work at [${data.github}](https://github.com/${data.github}/).`;
 }
 
 module.exports = generateMarkdown;
