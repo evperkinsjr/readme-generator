@@ -1,10 +1,12 @@
 # README Generator
 
 ## Description
-This application asks the user a series of questions to create a README.md file for their project. Watch the video demonstration below to see how it works.
+This application asks the user a series of questions to create a README.md file for their project.
+<p>&nbsp</p>
 
-Link to live application: [README Generator](https://evperkinsjr.github.io/readme-generator/)
-
+## Links
+- [Project Repository](https://github.com/evperkinsjr/readme-generator)
+- [README-Example.md](./README-Example.md)
 <p>&nbsp</p>
 
 ## Video Demonstration
