@@ -8,8 +8,7 @@ Link to live application: [README Generator](https://evperkinsjr.github.io/readm
 <p>&nbsp</p>
 
 ## Video Demonstration
-
-
+https://user-images.githubusercontent.com/79537431/123897190-f19a2200-d930-11eb-9959-5fc8f897ea0d.mp4
 <p>&nbsp</p>
 
 ## Technologies Used
